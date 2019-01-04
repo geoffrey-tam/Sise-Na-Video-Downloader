@@ -1,0 +1,7 @@
+[download]
+download_path=/
+downloader=3
+
+[aria2]
+rpc=http://172.16.115.4:6800/rpc
+token=myPassword
