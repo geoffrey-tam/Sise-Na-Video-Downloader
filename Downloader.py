@@ -112,13 +112,13 @@ class Downloader:
             if not os.path.exists(BaseDir + os.sep + "config"):
                 with open(BaseDir + os.sep + "config", 'w') as f:
                     f.write("[download]\n")
-                    f.write("download_path=%s\n"%BaseDir+os.sep+'downloads')
+                    f.write("download_path=%s"%BaseDir+os.sep+'downloads\n')
                     f.write("downloader=1\n")
                     if not os.path.exists(BaseDir + os.sep + 'downloads'):
                         os.mkdir(BaseDir + os.sep + 'downloads')
 
                     f.write("[aria2]\n")
-                    f.write("jsonrpc=http://localhost:6800/rpc\n")
+                    f.write("rpc=http://localhost:6800/rpc\n")
                     f.write("token= \n")
 
             self.cf.read(self._path, self._encoding)

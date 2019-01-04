@@ -6,7 +6,9 @@ import Home
 import Searcher
 import Viewer
 import readline
-
+import platform
+if platform.system() in ['Linux','Darwin']:
+    import readline
 
 class Exit(Exception):
     def __init__(self):
