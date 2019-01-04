@@ -5,7 +5,6 @@ import History
 import Home
 import Searcher
 import Viewer
-import readline
 import platform
 if platform.system() in ['Linux','Darwin']:
     import readline
